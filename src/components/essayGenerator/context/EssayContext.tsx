@@ -18,11 +18,14 @@ const EssayContextProvider: React.FC<any> = (props) => {
   };
   const changeSiteRatingHandler = (newVal: number) => {
     if (newVal === aiEssay.essayRating) {
+      //call api for saving user review
       prompt("Please Write a review");
     }
+    //call api and send the user rating response to backend server
     setAiEssay((pre) => ({ ...pre, siteRating: newVal }));
   };
   const generateEssay = () => {
+    //call actual ai api that will generate essay
     setAiEssay((pre) => ({
       ...pre,
       generatingEssay: true,
