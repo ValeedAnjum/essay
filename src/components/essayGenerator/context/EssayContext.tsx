@@ -1,4 +1,4 @@
-import { createContext, useState, useCallback } from "react";
+import { createContext, useState } from "react";
 import { EssayContextInterface } from "./EssayContextInterface";
 
 export const EssayContext = createContext<EssayContextInterface>(
