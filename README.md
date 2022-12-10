@@ -1,4 +1,4 @@
-# [Docs]
+# Docs
 
 I have added comments where api's will be used 
 
